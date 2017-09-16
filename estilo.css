@@ -9,3 +9,115 @@ form {
     background-color: #FFFFFF;
     max-width: 500px;
 }
+body {
+    display: block;
+    margin: 8px;
+}
+article, aside, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: #320DEB;
+}
+h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: #097373;
+}
+h3 {
+    display: block;
+    font-size: 15px;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+h4 {
+    display: block;
+    -webkit-margin-before: 1.33em;
+    -webkit-margin-after: 1.33em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+h5 {
+    display: block;
+    font-size: 15px;
+    -webkit-margin-before: 1.67em;
+    -webkit-margin-after: 1.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+h6 {
+    display: block;
+    font-size: 15px;
+    -webkit-margin-before: 2.33em;
+    -webkit-margin-after: 2.33em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+input, textarea {
+    width: 200px;
+    padding: 10px;
+    color: black;
+    margin-left: 20px;
+    border: 1px solid;
+}
+
+input:hover, textarea:hover, input:focus, textarea:focus {
+    background-color: #66FFFF;
+    color: black;
+    font-weight: bold;
+}
+
+.submit input {
+    background-color: rgba(36, 9, 227, 0.47);
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
+    border: 1px solid;
+    color: black;
+}
+
+textarea {
+    width: 400px;
+    height: 120px;
+    line-height: 20px;
+    max-width: 400px;
+}
+
+form label {
+    margin-left: 20px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
