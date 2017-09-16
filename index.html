@@ -49,12 +49,51 @@
         </section>
 
         <section>
-            <ul>Experiência profissional:
+            <ul>Participação em eventos:
 
-                <li>Empresa - Cargo - de início (mês e ano) e data final</li>
-                <li>Empresa - Cargo - de início (mês e ano) e data final</li>
-                <li>Empresa - Cargo - de início (mês e ano) e data final</li>
+                <li>Nome - Cidade - Ano</li>
+                <li>Nome - Cidade - Ano</li>
+                <li>Nome - Cidade - Ano</li>
             </ul>
+        </section>
+
+        <section>
+            <ul>Informações adicionais:
+
+                <li>Competências</li>
+                <li>Carteira de motorista</li>
+                <li>Disponibilidade para viagens</li>
+                <li>Idiomas</li>
+                <li>Objetivo profissional</li>
+            </ul>
+        </section>
+
+        <section>
+            <form name="form_contato">
+
+                <h1>Contato</h1>
+
+                <p class="nome">
+                    <input type="text" id="nomeid" placeholder="" required="required" name="nome" />
+                    <label for="nome">Nome</label>
+                </p>
+                <p class="fone">
+                    <input type="text" id="foneid" placeholder="(xx)xx-xx-xx-xx" name="fone" />
+                    <label for="fone">Fone</label>
+
+                </p>
+                <p>
+                    <input type="email" id="emailid" placeholder="" name="email" />
+                    <label for="email">Email</label>
+                </p>
+                <p>
+                    <textarea placeholder="Mensagem:"></textarea>
+                </p>
+                <p class="submit">
+                    <input type="submit" onclick="Enviar();" value="Enviar" />
+                </p>
+
+            </form>
         </section>
     </main>
 
