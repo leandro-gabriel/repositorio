@@ -1,18 +1,24 @@
 body {
-    padding: 0;
-    margin: 0;
+    padding: 50;
+    margin: 10;
 }
 
-form {
-    font-family: Verdana,Tahoma,sans-serif;
-    font-size: 15px;
-    background-color: #FFFFFF;
-    max-width: 500px;
+main {
+    display: block;
+    margin: 40px;
 }
+
+footer {
+    background: ghostwhite;
+    display: block;
+    margin: 30px;
+}
+
 body {
     display: block;
-    margin: 8px;
+    margin: 20px;
 }
+
 article, aside, footer, header, hgroup, main, nav, section {
     display: block;
 }
@@ -26,6 +32,7 @@ ul, menu, dir {
     -webkit-padding-start: 40px;
 }
 li {
+    font-size: 15px;
     display: list-item;
     text-align: -webkit-match-parent;
 }
@@ -33,7 +40,7 @@ h1 {
     font-size: 30px;
     margin-bottom: 20px;
     margin-left: 20px;
-    color: #320DEB;
+    color:  #097373;
 }
 h2 {
     font-size: 30px;
@@ -41,42 +48,8 @@ h2 {
     margin-left: 20px;
     color: #097373;
 }
-h3 {
-    display: block;
-    font-size: 15px;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    font-weight: bold;
-}
-h4 {
-    display: block;
-    -webkit-margin-before: 1.33em;
-    -webkit-margin-after: 1.33em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    font-weight: bold;
-}
-h5 {
-    display: block;
-    font-size: 15px;
-    -webkit-margin-before: 1.67em;
-    -webkit-margin-after: 1.67em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    font-weight: bold;
-}
-h6 {
-    display: block;
-    font-size: 15px;
-    -webkit-margin-before: 2.33em;
-    -webkit-margin-after: 2.33em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    font-weight: bold;
-}
 ul, menu, dir {
+    font-size: 18px;
     display: block;
     list-style-type: disc;
     -webkit-margin-before: 1em;
@@ -86,38 +59,87 @@ ul, menu, dir {
     -webkit-padding-start: 40px;
 }
 
-input, textarea {
-    width: 200px;
-    padding: 10px;
-    color: black;
-    margin-left: 20px;
-    border: 1px solid;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-input:hover, textarea:hover, input:focus, textarea:focus {
-    background-color: #66FFFF;
-    color: black;
-    font-weight: bold;
+fieldset {
+    border: 0;
 }
 
-.submit input {
-    background-color: rgba(36, 9, 227, 0.47);
-    height: 40px;
-    width: 100px;
-    font-weight: bold;
-    border: 1px solid;
-    color: black;
+body, input, select, textarea, button {
+    font-family: sans-serif;
+    font-size: 1em;
 }
 
-textarea {
-    width: 400px;
-    height: 120px;
-    line-height: 20px;
-    max-width: 400px;
+.grupo:before, .grupo:after {
+    content: " ";
+    display: table;
 }
 
-form label {
-    margin-left: 20px;
-    color: #FFFFFF;
-    font-weight: bold;
+.grupo:after {
+    clear: both;
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    color: #666;
+    display: block;
+}
+
+fieldset.grupo .campo {
+    float:  left;
+    margin-right: 1em;
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo input[type="url"],
+.campo input[type="tel"],
+.campo select,
+.campo textarea {
+    padding: 0.2em;
+    border: 1px solid #CCC;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+}
+
+.campo select option {
+    padding-right: 1em;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #FFC;
+}
+
+.campo label.checkbox {
+    color: #000;
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.botao {
+    font-size: 1.5em;
+    background: #F90;
+    border: 0;
+    margin-bottom: 1em;
+    color: #FFF;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.botao:hover {
+    background: #FB0;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+.botao, select, label.checkbox {
+    cursor: pointer;
 }
