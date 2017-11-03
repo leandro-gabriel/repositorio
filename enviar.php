@@ -11,7 +11,6 @@ $hora_envio = date('H:i:s');
 $headers = "From: ". $nome;
  
 $corpoemail = 'Contato - Curriculum
-             
             Nome: '   .$nome.' 
             Telefone: '  .$telefone.' 
             Email: '   .$email.'
