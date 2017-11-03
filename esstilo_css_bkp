@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Currículum Pessoal</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilo.scss">
+</head>
+
+<body>
+
+    <header>
+
+        <div id="topo">
+
+            <div id="imagem_topo">
+                <img src="foto.jpg" alt="">
+            </div>
+
+            <div id="descricao_topo" class="topo">
+                <h1>Curriculum Leandro</h1>
+                <h2>Engenheiro da computação com experiência em desenvolvimento de sistemas.</h2>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <section>
+            <ul>Informações pessoais:
+
+                <li>Data de nascimento: 01/02/1997</li>
+                <li>Endereço: Rod. ICR 111 S/N - Içara - SC</li>
+                <li>Estado Civil: Solteiro</li>
+                <li>Naturalidade: Brasileiro</li>
+                <li>Celular: (48) 99234-5211</li>
+                <li>E-mail: leandro@outlook.com</li>
+            </ul>
+        </section>
+
+        <section>
+            <ul>Formação acadêmica:
+
+                <li>Ensino médio: SATC</li>
+                <li>Graduação: Engenharia da Computação - Faculdade SATC</li>
+                <li>Cursos extras: Java; Power Builder;</li>
+            </ul>
+        </section>
+
+        <section>
+            <ul>Experiência profissional:
+
+                <li>Empresa A - Auxiliar de TI - de 01/2010 a 01/2011</li>
+                <li>Empresa B - Programador Júnior - de 01/2015 a 01/2016</li>
+                <li>Empresa C - Analista de Sistemas - de 01/2016 a atualmente</li>
+            </ul>
+        </section>
+
+        <section>
+            <ul>Participação em eventos:
+
+                <li>SECOMP Semana Acadêmica Eng. Computação - Criciúma - 2015</li>
+                <li>SECOMP Semana Acadêmica Eng. Computação - Criciúma - 2016</li>
+                <li>SECOMP Semana Acadêmica Eng. Computação - Criciúma - 2017</li>
+            </ul>
+        </section>
+
+        <section>
+            <ul>Informações adicionais:
+
+                <li>Carteira de motorista: SIM</li>
+                <li>Disponibilidade para viagens: Não
+                    <l/i>
+                        <li>Idiomas: Inglês</li>
+                        <li>Ganhar dinheiro</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <section>
+            <form action="enviar.php" name="form_contato" method="post">
+                <fieldset>
+                    <fieldset class="grupo">
+                        <div class="campo">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" style="width: 20em" value="">
+                        </div>
+                    </fieldset>
+                    <div class="campo">
+                        <label>Sexo</label>
+                        <label>
+                            <input type="radio" name="sexo" value="masculino"> Masculino
+                        </label>
+                        <label>
+                            <input type="radio" name="sexo" value="feminino"> Feminino
+                        </label>
+                    </div>
+                    <div class="campo">
+                        <label for="email">E-mail</label>
+                        <input type="text" id="email" name="email" style="width: 20em" value="">
+                    </div>
+                    <div class="campo">
+                        <label for="telefone">Telefone</label>
+                        <input type="text" id="telefone" name="telefone" style="width: 10em" value="">
+                    </div>
+
+                    <fieldset class="grupo">
+                        <div class="campo">
+                            <label for="cidade">Cidade</label>
+                            <input type="text" id="cidade" name="cidade" style="width: 10em" value="">
+                        </div>
+                        <div class="campo">
+                            <label for="estado">Estado</label>
+                            <select name="estado" id="estado">
+                                <option value="">--</option>
+                                <option value="PR">PR</option>
+                                <option value="RS">RS</option>
+                                <option value="SC">SC</option>
+                            </select>
+                        </div>
+                    </fieldset>
+
+                    <div class="campo">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea rows="6" style="width: 20em" id="mensagem" name="mensagem"></textarea>
+                    </div>
+
+
+                    <input type="reset" class="campo_submit" value="Limpar" />
+                    <input type="submit" class="campo_submit" value="Enviar" />
+                </fieldset>
+            </form>
+        </section>
+
+    </footer>
+
+    <div id="propaganda">
+        <!--
+        https://files.000webhost.com
+        senha pradrao - ######
+        -->
+    </div>
+
+</body>
+
+</html>
+
+
+$tamanho: 40px;
+
+body {
+    padding: 50px;
+    margin: 10px;
+}
+
+main {
+    display: block;
+    margin: $tamanho;
+}
+
+footer {
+    background: #EBEBF7;
+    display: block;
+    margin: 30px;
+}
+
+body {
+    display: block;
+    margin: 20px;
+}
+
+article, aside, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: $tamanho;
+}
+li {
+    font-size: 15px;
+    display: list-item;
+    text-align: left;
+}
+h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color:  #097373;
+}
+h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: #097373;
+}
+ul, menu, dir {
+    font-size: 18px;
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset {
+    border: 0;
+}
+
+body, input, select, textarea, button {
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+.grupo:before, .grupo:after {
+    content: " ";
+    display: table;
+}
+
+.grupo:after {
+    clear: both;
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    color: #666;
+    display: block;
+}
+
+fieldset.grupo .campo {
+    float:  left;
+    margin-right: 1em;
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo input[type="url"],
+.campo input[type="tel"],
+.campo select,
+.campo textarea {
+    padding: 0.2em;
+    border: 1px solid #CCC;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+}
+
+.campo select option {
+    padding-right: 1em;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #FFC;
+}
+
+.campo label.checkbox {
+    color: #000;
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.botao {
+    font-size: 1.5em;
+    background: #F90;
+    border: 0;
+    margin-bottom: 1em;
+    color: #FFF;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.botao:hover {
+    background: #FB0;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+.botao, select, label.checkbox {
+    cursor: pointer;
+}
+
+
+#topo{
+    height: 140px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+
+#imagem_topo{
+    border: 0px solid rgb(0, 0, 0);
+    width: 14%;
+    height: 100%;
+    float: left;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+#descricao_topo{
+    border: 0px solid rgb(0, 0, 0);
+    height: 100px;
+    width: 79%;
+    float: left;
+}
+
+
+#propaganda{
+    height: 165px;
+    border: 0px solid rgb(0, 0, 0);
+}
