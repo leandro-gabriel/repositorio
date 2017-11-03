@@ -50,7 +50,6 @@
 
             <h2>Experiência profissional:</h2>
             <div id="experiencia">
-
                 <il>
                     <li>Empresa A - Auxiliar de TI - de 01/2010 a 01/2011</li>
                     <li>Empresa B - Programador Júnior - de 01/2015 a 01/2016</li>
@@ -60,16 +59,12 @@
 
             <h2>Participação em eventos:</h2>
             <div id="experiencia">
-
                 <il>
-                        <li> Semana Acadêmica Eng. Computação - Criciúma - 2015</li>
-                        <li> Semana Acadêmica Eng. Computação - Criciúma - 2016</li>
-                        <li> Semana Acadêmica Eng. Computação - Criciúma - 2017</li>
+                    <li> Semana Acadêmica Eng. Computação - Criciúma - 2015</li>
+                    <li> Semana Acadêmica Eng. Computação - Criciúma - 2016</li>
+                    <li> Semana Acadêmica Eng. Computação - Criciúma - 2017</li>
                 </il>
             </div>
-            <figure>
-                <img src="certificado.jpg" alt="">
-            </figure>
         </section>
         <section id="section3">
             <h2>Dados para Contato:</h2>
@@ -79,8 +74,10 @@
                     <input type="text" id="telefone" name="telefone" placeholder="Telefone">
                     <input type="email" id="email" name="email" placeholder="E-mail">
                     <input id="assunto" name="assunto" type="text" placeholder="Assunto">
-                    <textarea name="textarea" id="mensagem" name="mensagem" cols="44" placeholder="Mensagem" rows="10"></textarea>
-                    <button>Enviar</button>
+                    <textarea id="mensagem" name="mensagem" cols="44" placeholder="Mensagem" rows="10"></textarea>
+                    
+                    <input type="submit" value="Enviar" id="botao" onclick="return validar()">
+
                 </form>
             </div>
         </section>
@@ -95,10 +92,8 @@
         </section>
 
     </footer>
-
-
-
-
+	<script src="jquery-3.1.0.min.js" type="text/javascript"></script>
+	<script src="script.js"></script>
 </body>
 
 </html>

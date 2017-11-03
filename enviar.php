@@ -2,7 +2,7 @@
 
 $nome = $_POST['nome'];
 $email = $_POST['email'];
-$assunto = 'Contato - Curriculum';
+$assunto = $_POST['assunto'];
 $msg = $_POST['mensagem'];
 $telefone = $_POST['telefone'];
 $data_envio = date('d/m/Y');
@@ -19,9 +19,12 @@ $corpoemail = 'Contato - Curriculum
               
             Este e-mail foi enviado em: '.$data_envio.' - '.$hora_envio.' ';
  
-if(mail("leandrogabriel@outlook.com", "Fale Conosco",$corpoemail,$headers)){
+if(mail("anderson.furlan@satc.edu.br", "Fale Conosco",$corpoemail,$headers)){
   echo "<script>alert('Mensagem enviada com sucesso!');</script>"; 
   echo "Mensagem Enviada"; 
+
+  $url = 'index.html';
+  echo'<META HTTP-EQUIV=Refresh CONTENT="0; URL='.$url.'">';
  
 } else{
       echo "<script>alert('Erro ao enviar, tente diretamente pelo email leandrogabriel@outlook.com');</script>"; 
